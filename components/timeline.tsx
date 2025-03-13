@@ -22,36 +22,6 @@ export default function Timeline() {
       description: "Enjoy drinks and hors d'oeuvres while the wedding party takes photos",
       icon: "🥂",
     },
-    {
-      time: "5:30 PM",
-      title: "Reception",
-      description: "Dinner and celebration begins",
-      icon: "🎉",
-    },
-    {
-      time: "6:30 PM",
-      title: "First Dance",
-      description: "The newlyweds share their first dance as a married couple",
-      icon: "💃",
-    },
-    {
-      time: "7:00 PM",
-      title: "Dinner Service",
-      description: "A delicious meal is served to all guests",
-      icon: "🍽️",
-    },
-    {
-      time: "8:00 PM",
-      title: "Cake Cutting",
-      description: "The couple cuts their wedding cake",
-      icon: "🎂",
-    },
-    {
-      time: "8:30 PM - 11:00 PM",
-      title: "Dancing & Celebration",
-      description: "Dance the night away with the newlyweds",
-      icon: "🕺",
-    },
   ]
 
   return (
@@ -64,7 +34,7 @@ export default function Timeline() {
           {events.map((event, index) => (
             <motion.div
               key={index}
-              className={`relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
+              className={`will-change-transform relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -73,11 +43,10 @@ export default function Timeline() {
                 ease: [0.22, 1, 0.36, 1],
               }}
               viewport={{ once: true, margin: "-100px" }}
-              className="will-change-transform"
             >
               {/* Timeline dot */}
               <motion.div
-                className="absolute left-4 md:left-1/2 w-8 h-8 rounded-full -translate-x-1/2 z-10 flex items-center justify-center"
+                className="will-change-transform absolute left-4 md:left-1/2 w-8 h-8 rounded-full -translate-x-1/2 z-10 flex items-center justify-center"
                 style={{
                   background:
                     index % 2 === 0
@@ -93,7 +62,6 @@ export default function Timeline() {
                   delay: index * 0.05 + 0.2,
                 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className="will-change-transform"
               >
                 <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center text-xs">
                   {event.icon}
@@ -102,7 +70,7 @@ export default function Timeline() {
 
               {/* Time */}
               <motion.div
-                className={`md:w-1/2 pl-16 md:pl-0 ${index % 2 === 0 ? "md:pr-12 text-left" : "md:pl-12 text-right"}`}
+                className={`will-change-transform md:w-1/2 pl-16 md:pl-0 ${index % 2 === 0 ? "md:pr-12 text-left" : "md:pl-12 text-right"}`}
                 initial={{ x: index % 2 === 0 ? 30 : -30, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
@@ -111,14 +79,13 @@ export default function Timeline() {
                   ease: [0.22, 1, 0.36, 1],
                 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className="will-change-transform"
               >
                 <div className="text-xl font-medium text-white">{event.time}</div>
               </motion.div>
 
               {/* Content */}
               <motion.div
-                className={`md:w-1/2 pl-16 ${index % 2 === 0 ? "md:pl-12 text-left" : "md:pr-12 text-right"}`}
+                className={`will-change-transform md:w-1/2 pl-16 ${index % 2 === 0 ? "md:pl-12 text-left" : "md:pr-12 text-right"}`}
                 initial={{ x: index % 2 === 0 ? -30 : 30, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
@@ -127,7 +94,6 @@ export default function Timeline() {
                   ease: [0.22, 1, 0.36, 1],
                 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className="will-change-transform"
               >
                 <div className="bg-white/80 backdrop-blur-sm p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-blue-light/20">
                   <h3 className="text-lg font-medium">{event.title}</h3>

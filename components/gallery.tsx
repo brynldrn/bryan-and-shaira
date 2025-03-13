@@ -23,9 +23,9 @@ export default function Gallery() {
     if (selectedImage === null) return
 
     if (direction === "prev") {
-      setSelectedImage((prev) => (prev === 0 ? images.length - 1 : prev - 1))
+      setSelectedImage((prev) => (prev === 0 ? images.length - 1 : (prev ?? 0) - 1))
     } else {
-      setSelectedImage((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+      setSelectedImage((prev) => (prev === images.length - 1 ? 0 : (prev ?? 0) + 1))
     }
   }
 

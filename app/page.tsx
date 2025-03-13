@@ -40,7 +40,7 @@ export default function WeddingPage() {
             >
               Bryan & Shaira
             </h1>
-            <p className="text-xl md:text-2xl mb-6 animate-fade-in text-white">Are getting married</p>
+            <p className="text-lg mb-6 animate-fade-in text-white">are getting married</p>
             <p className="text-2xl md:text-3xl font-light animate-fade-in delay-300 text-white">December 18, 2025</p>
           </div>
           <div className="mt-12 animate-bounce-slow will-change-transform">
@@ -128,16 +128,13 @@ export default function WeddingPage() {
             <AnimatedSection direction="right">
               <div className="space-y-6 bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-lg">
                 <p className="text-lg">
-                  We met on a rainy afternoon at a local coffee shop in the fall of 2020. What started as a chance
-                  encounter turned into hours of conversation and laughter.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, velit. Placeat laborum asperiores, quia sint sunt repellat ex rerum, voluptates ratione temporibus explicabo consequatur adipisci quod, quidem omnis amet voluptatum!
                 </p>
                 <p className="text-lg">
-                  After three years of adventures, growth, and creating beautiful memories together, Bryan proposed
-                  during a sunset hike at our favorite mountain overlook.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro adipisci perferendis veniam dolorum corporis consequatur fugit ipsum officiis libero? Ratione a dolore nulla repellat obcaecati eos optio provident omnis ullam!
                 </p>
                 <p className="text-lg">
-                  Now, we're excited to begin the next chapter of our lives together and we're thrilled to celebrate
-                  this special day with our closest friends and family.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos ut nobis saepe delectus repellendus tempore eaque nulla sapiente! Earum repellat ipsum reiciendis hic rerum et illo deleniti doloremque harum iste!
                 </p>
               </div>
             </AnimatedSection>
@@ -183,9 +180,7 @@ export default function WeddingPage() {
                     <Clock className="h-10 w-10 mx-auto mb-4 text-blue-light animate-spin-slow will-change-transform" />
                     <h3 className="text-xl font-medium mb-2">Time</h3>
                     <p>Ceremony</p>
-                    <p className="text-lg font-medium">3:00 PM</p>
-                    <p className="mt-2">Reception</p>
-                    <p className="text-lg font-medium">5:30 PM</p>
+                    <p className="text-lg font-medium">12:00 PM</p>
                   </div>
                 </CardContent>
               </Card>
@@ -197,11 +192,10 @@ export default function WeddingPage() {
                   <div>
                     <MapPin className="h-10 w-10 mx-auto mb-4 text-blue-DEFAULT animate-bounce-slow will-change-transform" />
                     <h3 className="text-xl font-medium mb-2">Location</h3>
-                    <p>Rosewood Gardens</p>
-                    <p className="text-lg font-medium">123 Blossom Lane</p>
-                    <p>Meadowville, CA 90210</p>
+                    <p>Burrow Cafe</p>
+                    <p className="text-lg font-medium">Beverly Hills Dr, Taytay, 1920 Rizal</p>
                     <Button variant="link" className="mt-2 hover:scale-105 transition-transform" asChild>
-                      <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
+                      <a href="https://maps.app.goo.gl/1PXWs3rgeu5z5tjM8" target="_blank" rel="noopener noreferrer">
                         View Map
                       </a>
                     </Button>
@@ -303,13 +297,12 @@ export default function WeddingPage() {
                 <Gift className="text-primary h-6 w-6 animate-wiggle" />
               </div>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Your presence at our wedding is the greatest gift of all. However, if you wish to honor us with a gift,
-                we've registered at the following places.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius incidunt, ipsa, minima tenetur officia dignissimos et illo eaque enim quis, repellat asperiores doloremque rerum. Quibusdam molestiae distinctio accusamus provident.
               </p>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {["Amazon", "Crate & Barrel", "Target", "Zola"].map((store, index) => (
               <AnimatedSection key={store} delay={index * 0.1}>
                 <div className="text-center">
@@ -331,7 +324,7 @@ export default function WeddingPage() {
                 </div>
               </AnimatedSection>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -355,9 +348,9 @@ export default function WeddingPage() {
               <div className="flex justify-center mb-6">
                 <Hotel className="text-white h-6 w-6 animate-float" />
               </div>
-              <p className="text-white/80 max-w-2xl mx-auto">
+              {/* <p className="text-white/80 max-w-2xl mx-auto">
                 For our out-of-town guests, we've arranged special rates at these nearby hotels.
-              </p>
+              </p> */}
             </div>
           </AnimatedSection>
 
@@ -402,7 +395,7 @@ export default function WeddingPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 relative" id="contact">
+      {/* <section className="py-20 relative" id="contact">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-DEFAULT/10 to-blue-light/10"></div>
         <DecorativeElement position="bottom-center" />
         <div className="container mx-auto px-4 relative z-10">
@@ -437,13 +430,13 @@ export default function WeddingPage() {
             </AnimatedSection>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="py-8 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="font-serif text-2xl md:text-3xl mb-4 animate-glow">Bryan & Shaira</h2>
-          <p className="mb-6">December 18, 2025 • Meadowville, CA</p>
+          <p className="mb-6">December 18, 2025 • 🇵🇭</p>
           <Separator className="max-w-xs mx-auto opacity-30 mb-6" />
           <p className="text-sm opacity-80">Made with love for our special day</p>
         </div>
